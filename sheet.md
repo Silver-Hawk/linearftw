@@ -1,6 +1,6 @@
 
 exer 1
-======
+=
 
 min						77x1	+	70x2	+	88x3	+	84x4	+	94x5
 s.t.
@@ -9,7 +9,7 @@ s.t.
 % of lead	30x1	+	60x2	+	10x3	+	30x4	+	10x5	>= 	25
 
 exer 2
-======
+=
 
 Let I be the set of cargos 1,..,4 indexed by i and J={Font,Center,Back} be the 
 set of compartments indexed by j. Let x_ij be the variables representing the
