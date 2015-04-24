@@ -1,15 +1,14 @@
 
-exer 1
-=
+#exer 1
 
-min						77x1	+	70x2	+	88x3	+	84x4	+	94x5
-s.t.
-% of tin		60x1	+	25x2	+	45x3	+	20x4	+	50x5	>= 	40
-% of zinc	10x1	+	15x2	+	45x3	+	50x4	+	40x5	>= 	35
-% of lead	30x1	+	60x2	+	10x3	+	30x4	+	10x5	>= 	25
 
-exer 2
-=
+	min						77x1	+	70x2	+	88x3	+	84x4	+	94x5
+	s.t.
+	% of tin		60x1	+	25x2	+	45x3	+	20x4	+	50x5	>= 	40
+	% of zinc	10x1	+	15x2	+	45x3	+	50x4	+	40x5	>= 	35
+	% of lead	30x1	+	60x2	+	10x3	+	30x4	+	10x5	>= 	25
+
+#exer 2
 
 Let I be the set of cargos 1,..,4 indexed by i and J={Font,Center,Back} be the 
 set of compartments indexed by j. Let x_ij be the variables representing the
@@ -31,8 +30,7 @@ amount of cargo i in compartment j
 	(sum_I x_i1 * w_i/wc_1) - (sum_I x_i3 * w_i/wc_3) == 0 
 	(sum_I x_i1 * w_i/wc_1) - (sum_I x_i2 * w_i/wc_2) == 0 
 
-exer 3
-======
+#exer 3
 
 Mathematical Formulation
 
@@ -49,8 +47,7 @@ Let x_ij be the variables representing the number of pasengers en class i on fli
  	sum_I x_i1 	+	x_i3 	<= 30
 	sum_i xi2 	+ 	xi3 	<= 30
 
-Exer 4
-======
+#Exer 4
 
 	
 
