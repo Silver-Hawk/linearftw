@@ -74,6 +74,8 @@
 
 \title{DM545\\\rule{10cm}{0.5mm}\\Linear and Integer Programming}
 \author{Jesper Lund\\jelun11@student.sdu.dk}
+
+
 \begin{document}
 \newcommand{\IS}{:}
 \newcommand{\OR}{$|$}
@@ -91,6 +93,28 @@
 \newpage
 
 \section{Examples}
+
+\subsection{LP formulation}
+
+\begin{itemize}
+
+\item[]Objective function:
+
+\item[]max $\sum\limits_{j\in J} \sum\limits_{i\in I} x_{ij}\cdot c_{j}$
+
+\item[]Subject to:
+
+\item[]$\sum\limits_{i\in I} x_{ij} \leq b_j \;\;\;\;\;\;\;\; \forall j\in J$
+
+\item[]$x_{ij}\leq 1 \;\;\;\;\;\;\;\; \forall j\in J,\; \forall i\in I$
+
+\item[]$ x_{ij}\geq 0 \;\;\;\;\;\;\;\; \forall j\in J,\; \forall i\in I$
+
+\end{itemize}
+
+
+
+
 \subsection{Network Flow}
 \begin{figure}
 \label{graph}
@@ -129,6 +153,8 @@
 \end{tikzpicture}
 \end{figure}
 
+
+
 \subsection{Matrices}
 \begin{table}[h]
 \centering
@@ -142,6 +168,8 @@ $x_1$ & $x_2$ & $x_3$ & $x_4$ & $x_5$ & $x_6$ & $x_7$ & $x_8$ & z & b \\ \hline
      &      &      &      &      &      &      &  &   &   \\ \hline
 \end{tabular}
 \end{table}
+
+
 \subsection{Cut example}
 \begin{center}
 \begin{tikzpicture}[domain=-0.1:2.2,xscale=1.5,yscale=1.5,
@@ -177,6 +205,9 @@ point/.style={rectangle,draw=black!50,fill=black!20,thick,inner sep=0pt,minimum 
 \draw[->,thick] (0,-1.2) -- (0,3) node[above] {$x_2$};
 \end{tikzpicture}
 \end{center}
+
+
+
 \subsection{Java Simplex}
 (1) gå til src og ``javac JavaSimplex.java''\\
 (2) brug java simplex med ``java JavaSimplex \%inputfile\%''\\
