@@ -64,6 +64,24 @@ a2 = array( [3,4,6] )
 a2t = dot(Abi,a)
 
 
-print a2t
+#print a2t
 
-print at
+#print at
+
+#2014 opgave 4.b
+A = array( [[4,3],[2,1],[1,2],[1,1]] )
+b = array( [[4,3,1,2]]).T 
+c = array( [[5,4]]).T
+
+print A
+print b
+print c
+
+slack = array([[1,0],[0,1]])
+
+dual = concatenate((A.T,slack),axis=1) 
+
+print dual
+
+
+
