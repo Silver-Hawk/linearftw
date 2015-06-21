@@ -3,7 +3,7 @@ from fractions import Fraction as f
 set_printoptions(precision=3,suppress=True)
 
 def printm(a):
-    """Prints the array as strings 
+    """Prints the array as strings
     :a: numpy array
     :returns: prints the array
     """
@@ -11,7 +11,7 @@ def printm(a):
         return str(x)
     p = vectorize(p,otypes=[str])
     print p(a)
-    
+
 def tableau(a,W=7):
     """Returns a string for verbatim printing
     :a: numpy array
@@ -37,7 +37,22 @@ def tableau(a,W=7):
 def vecT(v):
     return array([v]).T
 
-A = array( [[1,1,0],[2,0,0],[2,1,1]])
+A_B = array([
+    [1,0],
+    [0,0],
+    [0,1]
+])
+
+A_N = array([
+    [-1,1,0],
+    [ 1,0,1],
+    [ 0,1,0]
+])
+
+'''
+A = array([ [1,1,0],
+            [2,0,0],
+            [2,1,1]])
 
 b = array ([4,5,7])
 
@@ -45,7 +60,9 @@ Cn = array( [6,0,0] )
 
 Cb = array( [3,2,0] )
 
-An = array ( [[2,1,0],[3,0,1],[3,0,0]])
+An = array ([   [2,1,0],
+                [3,0,1],
+                [3,0,0]])
 
 Abi = linalg.inv(A)
 
@@ -67,3 +84,5 @@ a2t = dot(Abi,a)
 print a2t
 
 print at
+tableau(A)
+'''
