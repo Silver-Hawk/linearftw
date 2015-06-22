@@ -49,8 +49,10 @@ An = array ( [[2,1,0],[3,0,1],[3,0,0]])
 
 Abi = linalg.inv(A)
 
+#x værdieren i den optimale
 dot(Abi,b)
 
+#reduced cost for x'erne, hvis de er minus er løsning optimal
 Cn - dot(dot(Cb,Abi),An)
 
 a = array( [2,3,3] )
